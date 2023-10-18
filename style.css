@@ -21,15 +21,17 @@ body{
    flex-direction: column;
    height: 100dvh;
 }
+
 .container{
     background-color: var(--White);
-    border-radius: 10px 10px 25% 10px;
+    border-radius: 20px 20px 25% 20px;
     padding: 3%;
 }
 .container form{
     position: relative;
     border-bottom: 2px solid hsl(0, 0%, 86%);
-    padding-bottom: 40px;
+    padding-bottom: 50px;
+    margin-top: 40px;
 }
 .container .box{
    display: inline-block;
@@ -42,22 +44,51 @@ body{
     text-transform: uppercase;
     letter-spacing: 3px;
 }
+.container.error label{
+    color: var(--Light-red);
+}
 .container input{
     display: block;
     font-family: inherit;
     font-weight: 400i;
     color: var(--Smokey-grey);
-    padding: 5px 5px;
+    padding: 10px 5px;
     font-size: 1.25rem;
     border-radius: 5px;
     border: 1px solid hsl(0, 0%, 86%);
-    margin-right: 20px;
+    margin-right: 10px;
+}
+.container input:hover{
+    cursor: pointer;
+    border-color: var(--Purple);
+}
+.container.error input{
+    border-color: var(--Light-red);
+}
+.container small{
+    font-style: italic;
+    font-size: 12px;
+    color: var(--Light-red);
+    visibility: hidden;
+}
+.container.error small{
+    visibility: visible;
 }
 .container #submit{
     background-color: var(--Purple);
     border-radius: 50%;
-    /*padding: 7px;
-    border: none;*/
+    padding: 7px;
+    border: none;
+    position: absolute;
+    margin-top: -25px;
+    right: 42%;
+}
+.container #submit:hover{
+    cursor: pointer;
+    background-color: var(--Off-black);
+}
+.container .results{
+    margin-top: 20%;
 }
 .container .results p{
     font-size: 52px;
@@ -65,9 +96,30 @@ body{
     font-style: italic;
     line-height: 110%;
 }
+.container span{
+    color: var(--Purple);
+}
 
-@media screen and (min-with: 768px) {
-    
+@media screen and (min-width: 768px) {
+    .container{
+        padding: 2%;
+        padding-right: 5%;
+    }
+    .container form{
+        padding-bottom: 35px;
+        margin-top: 0;
+    }
+    .container input{
+        margin-right: 20px;
+        padding: 10px 15px;
+    }
+    .container #submit{
+        right: 37%;
+        padding: 10px;
+    }
+    .container .results p{
+        font-size: 62px;
+    }
 }
 .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
