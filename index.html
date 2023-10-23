@@ -20,19 +20,19 @@
     <form action="/">
       <div class="box">
         <label for="day">Day</label>
-        <input type="number" name="day" id="day" placeholder="DD" min="1" max="31"> 
+        <input type="text" name="day" id="day" placeholder="DD" minlength="1" maxlength="2"> 
         <small>Error text</small>
       </div>
 
       <div class="box">
         <label for="month">Month</label>
-        <input type="number" name="month" id="month" placeholder="MM" min="1" max="12"> 
+        <input type="text" name="month" id="month" placeholder="MM" minlength="1" maxlength="2"> 
         <small>Error text</small>
       </div>
 
       <div class="box">
         <label for="year">Year</label>
-        <input type="number" name="year" id="year" placeholder="YYYY" min="1900" max="2023">
+        <input type="text" name="year" id="year" placeholder="YYYY" minlength="4" maxlength="4">
         <small>Error text</small>
       </div>
     </form>
@@ -43,9 +43,12 @@
       <p id="days"><span>--</span>days</p> 
     </div>
   </main>
+  <footer>
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Maya-RT</a>.
   </div>
+  </footer>
 </body>
+<script src="/script.js"></script>
 </html>

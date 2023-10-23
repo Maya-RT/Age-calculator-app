@@ -56,7 +56,8 @@ body{
     font-size: 1.25rem;
     border-radius: 5px;
     border: 1px solid hsl(0, 0%, 86%);
-    margin-right: 10px;
+    width: 6rem;
+    margin-right: 15px;
 }
 .container input:hover{
     cursor: pointer;
@@ -110,15 +111,16 @@ body{
         margin-top: 0;
     }
     .container input{
-        margin-right: 20px;
-        padding: 10px 15px;
+       padding: 10px 15px;
+       width: 8rem;
+       margin-right: 20px;
     }
     .container #submit{
         right: 37%;
         padding: 10px;
     }
     .container .results p{
-        font-size: 62px;
+        font-size: 68px;
     }
 }
 .attribution { font-size: 11px; text-align: center; }
