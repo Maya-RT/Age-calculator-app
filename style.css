@@ -44,7 +44,7 @@ body{
     text-transform: uppercase;
     letter-spacing: 3px;
 }
-.container.error label{
+.box.error label{
     color: var(--Light-red);
 }
 .container input{
@@ -63,7 +63,7 @@ body{
     cursor: pointer;
     border-color: var(--Purple);
 }
-.container.error input{
+.box.error input{
     border-color: var(--Light-red);
 }
 .container small{
@@ -72,7 +72,7 @@ body{
     color: var(--Light-red);
     visibility: hidden;
 }
-.container.error small{
+.box.error small{
     visibility: visible;
 }
 .container #submit{
